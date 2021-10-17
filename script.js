@@ -91,7 +91,7 @@ if (kn == true ) {
 			
 			
 			let pse = String.fromCharCode(parseInt(temp, 2))
-				document.getElementById("field").value +=  pse;
+				document.getElementById("field").innerHTML +=  pse;
 				console.log(pse)
 				console.log(temp)
 	
