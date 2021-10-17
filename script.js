@@ -52,6 +52,8 @@ function read() {
 
 				console.log(vol)
 				console.log(rawData)
+                          document.getElementById("amp_view").innerHTML = vol;
+                          document.getElementById("bin_data_view").innerHTML = rawData.join();
 }
 
 
@@ -69,7 +71,7 @@ if (prsd > 0){
 function binParse(raw_Data) {
 	let charLenBin = 7;
 
-//let rawData = [1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1];
+
 
 let temp = "";
 let kn = Number.isInteger(raw_Data.length / 7)
@@ -86,7 +88,7 @@ if (kn == true ) {
 	
 	
 		if (Number.isInteger(temp.length/7) == true ) {
-			//textBin.push(parseInt(temp))
+			
 			
 			let pse = String.fromCharCode(parseInt(temp, 2))
 				document.getElementById("field").value +=  pse;
