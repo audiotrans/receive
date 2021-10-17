@@ -79,7 +79,7 @@ let kn = Number.isInteger(raw_Data.length / 7)
 
 if (kn == true ) {
 
-	document.getElementById("field").value ="";
+	document.getElementById("field").innerHTML ="";
 
 	for (let i = 0; i < raw_Data.length; i++) {
 		
